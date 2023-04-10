@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="main-login">
+        <div class="left-login" data-aos="zoom-in">
+            <h1>Faça o Login e se cadastre</h1>
+            <img src="Dictionary-pana.svg" class="left-login-image" data-aos="fade-right" alt="erro">
+
+        </div>
+        <div class="right-login" data-aos="zoom-in">
+            <div class="card-login">
+                <form>
+
+                    <h3>Login</h3>
+                    <div class="textfield">
+                        <input type="text" placeholder="Login" id="login">
+                    </div>
+                    <div class="textfield">
+                        <input type="password" placeholder="Senha" id="senha">
+                    </div>
+                    <div class="btn-login">
+                        <input type="submit" onclick="logar(); return false">
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+
+        <script>
+
+
+            function logar() {
+
+                var login = document.getElementById('login').value;
+                var senha = document.getElementById('senha').value;
+
+                if (login === "fabricio" && senha === "fabricio") {
+                    alert('Sucesso');
+                    location.href = "file:///C:/Users/usuario/Downloads/TesteProjetoCoinf/fabricio.html";
+                } else if (login === "flavia" && senha === "flavia") {
+                    alert('Sucesso');
+                    location.href = "file:///C:/Users/usuario/Downloads/TesteProjetoCoinf/flavia.html";
+                } else {
+                    alert('Usuario ou senha incorretos');
+                }
+            }
+
+
+        </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+
+<script>
+    AOS.init({
+        duration:1000,
+        delay:400
+    })
+</script>
+
+</body>
+
+</html>
